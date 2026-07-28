@@ -1,0 +1,116 @@
+/* =========================
+   DPS Hub Global Styles
+   ========================= */
+
+
+/* Body */
+
+body {
+
+    background-color: var(--color-background);
+
+    color: var(--color-text);
+
+    font-family: var(--font-body);
+
+    font-size: var(--font-size-body);
+
+    line-height: 1.6;
+
+}
+
+
+
+
+
+/* Headings */
+
+h1,
+h2,
+h3 {
+
+    font-family: var(--font-heading);
+
+    color: var(--color-primary);
+
+    line-height: 1.2;
+
+}
+
+
+
+
+
+h1 {
+
+    font-size: var(--font-size-hero);
+
+    font-weight: var(--weight-bold);
+
+}
+
+
+
+
+
+h2 {
+
+    font-size: var(--font-size-section);
+
+    font-weight: var(--weight-semibold);
+
+}
+
+
+
+
+
+h3 {
+
+    font-size: var(--font-size-card);
+
+    font-weight: var(--weight-medium);
+
+}
+
+
+
+
+
+/* Paragraphs */
+
+p {
+
+    color: var(--color-text-secondary);
+
+}
+
+
+
+
+
+/* Main Container */
+
+.section-container {
+
+    width: 100%;
+
+    max-width: 1400px;
+
+    margin: 0 auto;
+
+    padding-left: 60px;
+
+    padding-right: 60px;
+
+}
+
+
+
+/* Sections */
+
+section {
+
+    padding: var(--space-xxl) 0;
+
+}

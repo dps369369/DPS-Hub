@@ -1,0 +1,132 @@
+/* =========================
+   DPS Hub Design Variables
+   ========================= */
+
+
+:root {
+
+
+    /* =========================
+       Brand Colors
+       ========================= */
+
+
+    --color-background: #F5F3EE;
+    --color-surface: #FFFFFF;
+
+    --color-primary: #0B0F0E;
+    --color-secondary: #1F6B45;
+
+    --color-accent: #D4AF37;
+
+    --color-text: #2C2C2C;
+    --color-text-secondary: #6B6B6B;
+
+
+
+
+    /* =========================
+       Typography
+       ========================= */
+
+
+    --font-heading: "Space Grotesk", sans-serif;
+
+    --font-body: "Inter", sans-serif;
+
+
+
+
+    /* =========================
+       Font Sizes
+       ========================= */
+
+
+    --font-size-hero: 64px;
+
+    --font-size-title: 48px;
+
+    --font-size-section: 36px;
+
+    --font-size-card: 24px;
+
+    --font-size-body: 16px;
+
+    --font-size-small: 14px;
+
+
+
+
+    /* =========================
+       Font Weights
+       ========================= */
+
+
+    --weight-regular: 400;
+
+    --weight-medium: 500;
+
+    --weight-semibold: 600;
+
+    --weight-bold: 700;
+
+
+
+
+    /* =========================
+       Spacing System
+       ========================= */
+
+
+    --space-xs: 8px;
+
+    --space-sm: 16px;
+
+    --space-md: 24px;
+
+    --space-lg: 32px;
+
+    --space-xl: 64px;
+
+    --space-xxl: 96px;
+
+
+
+
+    /* =========================
+       Border Radius
+       ========================= */
+
+
+    --radius-small: 8px;
+
+    --radius-medium: 16px;
+
+    --radius-large: 24px;
+
+
+
+
+    /* =========================
+       Shadows
+       ========================= */
+
+
+    --shadow-small: 0 4px 10px rgba(0,0,0,0.08);
+
+    --shadow-medium: 0 8px 20px rgba(0,0,0,0.12);
+
+
+
+
+    /* =========================
+       Transitions
+       ========================= */
+
+
+    --transition-fast: 0.2s ease;
+
+    --transition-normal: 0.3s ease;
+
+
+}

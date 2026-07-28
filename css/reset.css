@@ -1,0 +1,52 @@
+/* =========================
+   DPS Hub Global Reset
+   ========================= */
+
+/* Remove default browser spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Improve text rendering */
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* Remove default list styling */
+ul,
+ol {
+    list-style: none;
+}
+
+
+/* Make images easier to control */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+/* Remove default link styling */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* Make form elements inherit website styles */
+button,
+input,
+textarea,
+select {
+    font: inherit;
+}
+
+
+/* Body base setup */
+body {
+    min-height: 100vh;
+}

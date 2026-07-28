@@ -1,0 +1,278 @@
+/* =========================
+   DPS Hub Books Page Styles
+   ========================= */
+
+
+/* =========================
+   Books Hero
+   ========================= */
+
+
+.books-hero {
+
+    min-height: 55vh;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    background-image: url("../../assets/images/banners/books-banner.png");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+    position: relative;
+
+}
+
+
+
+
+
+.books-hero::before {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background: rgba(11, 15, 14, 0.65);
+
+}
+
+
+
+
+
+.books-hero .section-container {
+
+    position: relative;
+
+    z-index: 1;
+
+}
+
+
+
+
+
+.books-hero h1 {
+
+    color: var(--color-background);
+
+    font-size: 64px;
+
+}
+
+
+
+
+
+.books-hero p {
+
+    color: var(--color-background);
+
+    max-width: 700px;
+
+    margin: var(--space-md) auto 0;
+
+    font-size: 20px;
+
+    line-height: 1.6;
+
+}
+
+
+
+
+
+/* =========================
+   Book Collection
+   ========================= */
+
+
+.books {
+
+    text-align: center;
+
+}
+
+
+
+
+
+.book-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: var(--space-xl);
+
+    margin-top: var(--space-xl);
+
+}
+
+
+
+
+
+/* =========================
+   Book Card
+   ========================= */
+
+
+.book-card {
+
+    background-color: var(--color-surface);
+
+    padding: var(--space-lg);
+
+    border-radius: var(--radius-medium);
+
+    text-align: left;
+
+    overflow: hidden;
+
+    transition: var(--transition-normal);
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+
+}
+
+
+
+
+
+.book-card:hover {
+
+    transform: translateY(-10px);
+
+}
+
+
+
+
+
+.book-card img {
+
+    width: 100%;
+
+    height: 380px;
+
+    object-fit: cover;
+
+    border-radius: var(--radius-small);
+
+}
+
+
+
+
+
+.book-card h3 {
+
+    margin-top: var(--space-md);
+
+    font-size: 24px;
+
+}
+
+
+
+
+
+.book-card p {
+
+    margin-top: var(--space-sm);
+
+    line-height: 1.6;
+
+    color: var(--color-text-secondary);
+
+}
+
+
+
+
+
+.book-card .btn {
+
+    margin-top: var(--space-lg);
+
+}
+
+
+.book-info {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+
+    margin-top: var(--space-md);
+
+    font-size: 14px;
+
+    color: var(--color-text-secondary);
+
+}
+
+
+/* =========================
+   Responsive
+   ========================= */
+
+
+@media (max-width: 900px) {
+
+
+    .book-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+
+}
+
+
+
+
+
+@media (max-width: 600px) {
+
+
+    .book-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+
+    .books-hero h1 {
+
+        font-size: 42px;
+
+    }
+
+
+
+    .book-card img {
+
+        height: 320px;
+
+    }
+
+
+}

@@ -1,0 +1,195 @@
+/* =========================
+   DPS Hub Home Page Styles
+   ========================= */
+
+
+/* =========================
+   Hero Section
+   ========================= */
+
+
+.hero {
+
+    min-height: 90vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    background-image: url("../../assets/images/banners/dps-hub-hero.png");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+    position: relative;
+
+}
+
+
+/* Dark overlay for readability */
+
+.hero::before {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background: rgba(11, 15, 14, 0.55);
+
+}
+
+
+
+
+
+/* Hero Content */
+
+.hero-content {
+
+    position: relative;
+
+    z-index: 1;
+
+    max-width: 850px;
+
+    padding: var(--space-lg);
+
+}
+
+
+
+
+
+.hero-content h1 {
+
+    color: var(--color-background);
+
+}
+
+
+
+
+
+.hero-content p {
+
+    color: var(--color-background);
+
+    font-size: 20px;
+
+    margin-top: var(--space-md);
+
+    line-height: 1.7;
+
+}
+
+
+
+
+
+/* =========================
+   Hero Buttons
+   ========================= */
+
+
+.hero-buttons {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: var(--space-md);
+
+    margin-top: var(--space-lg);
+
+}
+
+
+
+
+
+/* =========================
+   Introduction Section
+   ========================= */
+
+
+.introduction {
+
+    text-align: center;
+
+}
+
+
+
+
+
+.introduction p {
+
+    max-width: 800px;
+
+    margin: var(--space-md) auto 0;
+
+}
+
+
+
+
+
+/* =========================
+   About Preview Section
+   ========================= */
+
+
+.about-preview {
+
+    text-align: center;
+
+}
+
+
+
+
+
+.about-preview p {
+
+    max-width: 700px;
+
+    margin: var(--space-md) auto;
+
+}
+
+
+
+
+
+.about-preview a {
+
+    display: inline-block;
+
+    margin-top: var(--space-md);
+
+    color: var(--color-accent);
+
+    font-weight: var(--weight-semibold);
+
+    transition: var(--transition-fast);
+
+}
+
+
+
+
+
+.about-preview a:hover {
+
+    opacity: 0.8;
+
+}

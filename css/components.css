@@ -1,0 +1,232 @@
+/* =========================
+   DPS Hub Components
+   ========================= */
+
+
+/* =========================
+   Buttons
+   ========================= */
+
+
+.btn {
+
+    display: inline-block;
+
+    padding: 12px 24px;
+
+    border-radius: var(--radius-medium);
+
+    font-weight: var(--weight-semibold);
+
+    transition: var(--transition-normal);
+
+}
+
+
+
+
+
+.primary-btn {
+
+    background-color: var(--color-accent);
+
+    color: var(--color-primary);
+
+}
+
+
+
+
+
+.primary-btn:hover {
+
+    opacity: 0.85;
+
+}
+
+
+
+
+
+.secondary-btn {
+
+    border: 2px solid var(--color-background);
+
+    color: var(--color-background);
+
+    background: transparent;
+
+}
+
+
+
+
+.secondary-btn:hover {
+
+    background-color: var(--color-background);
+
+    color: var(--color-primary);
+
+}
+
+
+
+
+/* =========================
+   Navbar
+   ========================= */
+
+
+header {
+
+    width: 100%;
+
+}
+
+
+
+
+
+header nav {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+}
+
+
+
+
+
+header ul {
+
+    display: flex;
+
+    gap: var(--space-lg);
+
+}
+
+
+
+
+
+header a {
+
+    color: var(--color-text);
+
+    font-weight: var(--weight-medium);
+
+}
+
+
+
+
+
+header a:hover {
+
+    color: var(--color-accent);
+
+}
+
+
+
+
+/* =========================
+   Footer
+   ========================= */
+
+
+footer {
+
+    background-color: var(--color-primary);
+
+    color: var(--color-background);
+
+    padding: var(--space-xl) 0;
+
+}
+
+
+
+
+
+.footer-container {
+
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 0 var(--space-lg);
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: var(--space-md);
+
+}
+
+
+
+
+
+.footer-container h3 {
+
+    color: var(--color-background);
+
+}
+
+
+
+
+
+.footer-container p {
+
+    color: var(--color-text-secondary);
+
+}
+
+
+
+
+
+/* Footer Navigation */
+
+.footer-container nav {
+
+    display: flex;
+
+    gap: var(--space-lg);
+
+    flex-wrap: wrap;
+
+}
+
+
+
+
+
+.footer-container nav a {
+
+    color: var(--color-background);
+
+    font-weight: var(--weight-medium);
+
+    transition: var(--transition-fast);
+
+}
+
+
+
+
+
+.footer-container nav a:hover {
+
+    color: var(--color-accent);
+
+    transform: translateY(-2px);
+
+}

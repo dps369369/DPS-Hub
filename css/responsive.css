@@ -1,0 +1,200 @@
+/* =========================
+   DPS Hub Responsive Design
+   ========================= */
+
+
+/* =========================
+   Large Tablet / Small Laptop
+   901px - 1200px
+   ========================= */
+
+
+@media (max-width: 1200px) {
+
+
+    .section-container {
+
+        max-width: 100%;
+
+    }
+
+
+    h1 {
+
+        font-size: 56px;
+
+    }
+
+
+    .hero {
+
+        gap: var(--space-lg);
+
+    }
+
+
+}
+
+
+
+
+
+/* =========================
+   Tablet
+   601px - 900px
+   ========================= */
+
+
+@media (max-width: 900px) {
+
+
+    h1 {
+
+        font-size: 48px;
+
+    }
+
+
+
+    h2 {
+
+        font-size: 32px;
+
+    }
+
+
+
+    .hero {
+
+        flex-direction: column;
+
+        text-align: center;
+
+    }
+
+
+
+    .hero-content {
+
+        width: 100%;
+
+    }
+
+
+
+    .hero-image {
+
+        width: 80%;
+
+        margin: 0 auto;
+
+    }
+
+
+
+    .hero-buttons {
+
+        justify-content: center;
+
+    }
+
+
+
+    header ul {
+
+        gap: var(--space-md);
+
+    }
+
+
+
+}
+
+
+
+
+
+/* =========================
+   Mobile
+   Below 600px
+   ========================= */
+
+
+@media (max-width: 600px) {
+
+
+    h1 {
+
+        font-size: 36px;
+
+    }
+
+
+
+    h2 {
+
+        font-size: 28px;
+
+    }
+
+
+
+    .section-container {
+
+        padding: 0 var(--space-md);
+
+    }
+
+
+
+    header ul {
+
+        flex-direction: column;
+
+        align-items: center;
+
+    }
+
+
+
+    .hero-buttons {
+
+        flex-direction: column;
+
+        align-items: center;
+
+        width: 100%;
+
+    }
+
+
+
+    .btn {
+
+        width: 100%;
+
+        text-align: center;
+
+    }
+
+
+
+    .hero-image {
+
+        width: 100%;
+
+    }
+
+
+
+    footer nav {
+
+        flex-direction: column;
+
+        gap: var(--space-sm);
+
+    }
+
+
+
+}
