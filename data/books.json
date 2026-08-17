@@ -1,11 +1,13 @@
 [
     {
+        "id": "woman",
         "title": "WOMAN",
         "author": "DPS",
-        "published": "2026.01.01",
-        "pages": "120 Pages",
-        "description": "WOMAN is a book that explores the multifaceted nature of womanhood, delving into the experiences, challenges, and triumphs of women across different.",
+        "published": "2026",
+        "status": "In Progress",
+        "pages": "—",
         "cover": "../assets/images/books/woman.png",
-        "download": "https://github.com/dps369369/DPS-Hub/releases/download/v1.0-books/woman.pdf"
+        "description": "WOMAN is a book that explores the multifaceted nature of womanhood, delving into the experiences, challenges, and triumphs of women across different dimensions of life.",
+        "download": ""
     }
 ]

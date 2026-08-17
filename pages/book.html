@@ -5,72 +5,40 @@
 
     <meta charset="UTF-8">
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>DPS Hub | Books</title>
+    <title>DPS Hub | Book</title>
 
-    <link
-        rel="icon"
-        href="../assets/images/logo/favicon.ico"
-    >
+    <link rel="icon" href="../assets/images/logo/favicon.ico">
 
 
     <!-- Google Fonts -->
 
-    <link
-        rel="preconnect"
-        href="https://fonts.googleapis.com"
-    >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link
-        rel="preconnect"
-        href="https://fonts.gstatic.com"
-        crossorigin
-    >
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
-        rel="stylesheet"
-    >
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
 
 
     <!-- Global CSS -->
 
-    <link
-        rel="stylesheet"
-        href="../css/variables.css"
-    >
+    <link rel="stylesheet" href="../css/variables.css">
 
-    <link
-        rel="stylesheet"
-        href="../css/reset.css"
-    >
+    <link rel="stylesheet" href="../css/reset.css">
 
-    <link
-        rel="stylesheet"
-        href="../css/components.css"
-    >
+    <link rel="stylesheet" href="../css/components.css">
 
-    <link
-        rel="stylesheet"
-        href="../css/style.css"
-    >
+    <link rel="stylesheet" href="../css/style.css">
 
-    <link
-        rel="stylesheet"
-        href="../css/responsive.css"
-    >
+    <link rel="stylesheet" href="../css/responsive.css">
 
 
-    <!-- Books Page CSS -->
+    <!-- Book Page CSS -->
 
-    <link
-        rel="stylesheet"
-        href="../css/pages/books.css"
-    >
+    <link rel="stylesheet" href="../css/pages/book.css">
 
 </head>
 
@@ -139,21 +107,16 @@
 
 
         <!-- =========================
-             Books Hero
+             Book Details
              ========================= -->
 
-        <section class="books-hero">
+        <section class="book-page">
 
-            <div class="section-container">
+            <div
+                class="section-container"
+                id="book-page-container">
 
-                <h1>
-                    Books
-                </h1>
-
-                <p>
-                    Explore books, ideas, and written works
-                    published through DPS Hub.
-                </p>
+                <!-- Book information will be loaded by book.js -->
 
             </div>
 
@@ -161,28 +124,29 @@
 
 
         <!-- =========================
-             Book Collection
+             Chapter Collection
              ========================= -->
 
-        <section class="books">
+        <section class="chapter-selection">
 
             <div class="section-container">
 
                 <h2>
-                    Book Collection
+                    Chapters
                 </h2>
 
+                <p>
+                    Explore the chapters of this book.
+                </p>
 
-                <!--
-                    Books are generated
-                    dynamically by books.js.
-                -->
 
                 <div
-                    class="book-grid"
-                    id="book-container"
-                ></div>
+                    class="chapter-grid"
+                    id="chapter-container">
 
+                    <!-- Chapters will be loaded by book.js -->
+
+                </div>
 
             </div>
 
@@ -247,10 +211,9 @@
     </footer>
 
 
-    <!-- Books JavaScript -->
+    <!-- Book JavaScript -->
 
-    <script src="../js/pages/books.js"></script>
-
+    <script src="../js/pages/book.js"></script>
 
 </body>
 

@@ -1,0 +1,500 @@
+/* =========================
+   DPS Hub — Individual Book
+   ========================= */
+
+
+/* =========================
+   Book Information
+   ========================= */
+
+.book-page {
+
+    padding-top: var(--space-xxl);
+
+    padding-bottom: var(--space-xl);
+
+}
+
+
+.book-page .section-container {
+
+    display: grid;
+
+    grid-template-columns: 280px 1fr;
+
+    gap: var(--space-xl);
+
+    align-items: start;
+
+}
+
+
+/* =========================
+   Book Cover
+   ========================= */
+
+.book-page img {
+
+    width: 100%;
+
+    max-width: 280px;
+
+    height: 400px;
+
+    object-fit: contain;
+
+    display: block;
+
+    border-radius: var(--radius-small);
+
+    box-shadow: var(--shadow-medium);
+
+}
+
+
+/* =========================
+   Book Title
+   ========================= */
+
+.book-page h1 {
+
+    font-family: var(--font-heading);
+
+    font-size: var(--font-size-title);
+
+    font-weight: var(--weight-bold);
+
+    color: var(--color-primary);
+
+}
+
+
+/* =========================
+   Book Description
+   ========================= */
+
+.book-page p {
+
+    max-width: 750px;
+
+    margin-top: var(--space-md);
+
+    color: var(--color-text-secondary);
+
+    font-size: var(--font-size-body);
+
+    line-height: 1.8;
+
+}
+
+
+/* =========================
+   Book Information
+   ========================= */
+
+.book-page .book-info {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: var(--space-xs);
+
+    margin-top: var(--space-lg);
+
+}
+
+
+.book-page .book-info span {
+
+    color: var(--color-text-secondary);
+
+    font-size: var(--font-size-small);
+
+}
+
+
+/* =========================
+   Chapter Section
+   ========================= */
+
+.chapter-selection {
+
+    padding-top: var(--space-xl);
+
+    padding-bottom: var(--space-xxl);
+
+}
+
+
+.chapter-selection h2 {
+
+    font-family: var(--font-heading);
+
+    font-size: var(--font-size-section);
+
+    font-weight: var(--weight-bold);
+
+    color: var(--color-primary);
+
+    text-align: center;
+
+}
+
+
+/* =========================
+   Chapter Container
+   ========================= */
+
+#chapter-container {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: var(--space-lg);
+
+    margin-top: var(--space-xl);
+
+}
+
+
+/* =========================
+   Chapter Card
+   ========================= */
+
+.chapter-card {
+
+    display: flex;
+
+    flex-direction: column;
+
+    padding: var(--space-lg);
+
+    background-color: var(--color-surface);
+
+    border-radius: var(--radius-medium);
+
+    box-shadow: var(--shadow-small);
+
+    transition:
+        transform var(--transition-normal),
+        background-color var(--transition-normal),
+        box-shadow var(--transition-normal);
+
+}
+
+
+.chapter-card:hover {
+
+    transform: translateY(-6px);
+
+    background-color: #E8F3FF;
+
+    box-shadow: var(--shadow-medium);
+
+}
+
+
+/* =========================
+   Chapter Number
+   ========================= */
+
+.chapter-card h3 {
+
+    font-family: var(--font-heading);
+
+    font-size: var(--font-size-card);
+
+    color: var(--color-primary);
+
+}
+
+
+/* =========================
+   Chapter Title
+   ========================= */
+
+.chapter-card p {
+
+    margin-top: var(--space-sm);
+
+    color: var(--color-text-secondary);
+
+    line-height: 1.6;
+
+}
+
+
+/* =========================
+   Chapter Pages
+   ========================= */
+
+.chapter-card .chapter-pages {
+
+    margin-top: var(--space-sm);
+
+    color: var(--color-text-secondary);
+
+    font-size: var(--font-size-small);
+
+}
+
+
+/* =========================
+   Download Button
+   ========================= */
+
+.chapter-card .btn {
+
+    align-self: flex-start;
+
+    margin-top: var(--space-lg);
+
+}
+
+
+/* =========================
+   Download Button Hover
+   ========================= */
+
+.chapter-card .primary-btn {
+
+    transition: var(--transition-fast);
+
+}
+
+
+.chapter-card .primary-btn:hover {
+
+    background-color: var(--color-secondary);
+
+    color: var(--color-surface);
+
+}
+
+
+/* =========================
+   Responsive — Tablet
+   ========================= */
+
+@media (max-width: 900px) {
+
+.book-page .section-container {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-lg);
+}
+
+    .book-page img {
+
+        height: 320px;
+
+    }
+
+
+    #chapter-container {
+
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+    }
+
+}
+
+
+/* =========================
+   Responsive — Mobile
+   ========================= */
+
+@media (max-width: 600px) {
+
+    .book-page {
+
+        padding-top: var(--space-xl);
+
+    }
+
+
+    .book-page .section-container {
+
+        grid-template-columns: 1fr;
+
+        text-align: center;
+
+    }
+
+
+    .book-page img {
+
+        margin: 0 auto;
+
+        max-width: 220px;
+
+        height: 320px;
+
+    }
+
+
+    .book-page h1 {
+
+        font-size: 38px;
+
+    }
+
+
+    .book-page p {
+
+        margin-left: auto;
+
+        margin-right: auto;
+
+    }
+
+
+    .book-page .book-info {
+
+        align-items: center;
+
+    }
+
+
+    #chapter-container {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+/* =========================
+   Book Hero
+   ========================= */
+
+.book-page {
+
+    min-height: 70vh;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    overflow: hidden;
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+}
+
+
+/* Dark overlay */
+
+.book-page::before {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background: rgba(11, 15, 14, 0.65);
+
+}
+
+
+/* Content */
+
+.book-page .section-container {
+
+    position: relative;
+
+    z-index: 1;
+
+    width: 100%;
+
+    max-width: 100%;
+
+    text-align: center;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: var(--space-md);
+
+}
+
+
+/* Book cover */
+
+.book-page img {
+
+    width: 220px;
+
+    height: 320px;
+
+    object-fit: contain;
+
+    border-radius: var(--radius-small);
+
+    box-shadow: var(--shadow-medium);
+
+}
+
+
+/* Title */
+
+.book-page h1 {
+
+    color: var(--color-surface);
+
+    font-size: var(--font-size-title);
+
+}
+
+
+/* Description */
+
+.book-page p {
+
+    max-width: 750px;
+
+    color: var(--color-surface);
+
+    line-height: 1.7;
+
+}
+
+
+/* Book information */
+
+.book-page .book-info {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: var(--space-md);
+
+    flex-wrap: wrap;
+
+}
+
+.book-page .book-info span {
+
+    color: var(--color-surface);
+
+}
